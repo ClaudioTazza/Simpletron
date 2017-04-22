@@ -16,7 +16,7 @@
 #define BRANCHZERO 42
 #define HALT 43
 
-#define SIZE 100
+#define SIZE 5
 
 void welcome();
 void inputProgram(int memory[], int size);
@@ -46,11 +46,13 @@ void inputProgram(int memory[], int size){
   int input;
   size_t i = 0;
 
-  do{
+  while(1){
     scanf("%d", &input);
+    if(input == -99999 || i == (size - 1)) break;
+
     memory[i] = input;
     ++i;
-  }while (input != -9999 || i < size);
+  }
 
   puts("*** Program loading completed ***");
 }
