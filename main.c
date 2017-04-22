@@ -16,7 +16,7 @@
 #define BRANCHZERO 42
 #define HALT 43
 
-#define SIZE 5
+#define SIZE 100
 
 void welcome();
 void inputProgram(int memory[], int size);
