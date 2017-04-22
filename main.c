@@ -19,13 +19,13 @@
 #define SIZE 100
 
 void welcome();
-void inputProgram(int memory[], int SIZE);
+void inputProgram(int memory[], int size);
 
 int main(){
   int memory[SIZE], operationCode, operation;
 
   welcome();
-  inputProgram(memory[], 100);
+  inputProgram(memory, SIZE);
 
 
 
@@ -42,7 +42,7 @@ void welcome(){
        "*** your program. ***\n");
 }
 
-void inputProgram(int memory[], int SIZE){
+void inputProgram(int memory[], int size){
   int input;
   size_t i = 0;
 
@@ -50,7 +50,7 @@ void inputProgram(int memory[], int SIZE){
     scanf("%d", &input);
     memory[i] = input;
     ++i;
-  }while (input != -9999 || i < SIZE);
+  }while (input != -9999 || i < size);
 
   puts("*** Program loading completed ***");
 }
