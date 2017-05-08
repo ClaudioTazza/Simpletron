@@ -18,16 +18,14 @@
 
 #define SIZE 100
 
-void welcome();
-void inputProgram(int memory[], int size);
+void welcome();//Stampa il messaggio di saluto
+void inputProgram(int memory[], int size);//fa inserire i comandi all'utente fino a chiusura
 
 int main(){
   int memory[SIZE], operationCode, operation;
 
   welcome();
   inputProgram(memory, SIZE);
-
-
 
   return 0;
 }
