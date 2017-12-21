@@ -24,6 +24,8 @@ void inputProgram(int memory[], int size);//fa inserire i comandi all'utente fin
 int main(){
   int memory[SIZE], operationCode, operation;
 
+  printf("istruzione inutile, forse dannosa!\n");
+
   welcome();
   inputProgram(memory, SIZE);
 
